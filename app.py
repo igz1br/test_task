@@ -1,4 +1,4 @@
-#TODO: add server
+
 from fastapi import FastAPI
 from endpoints.lumos import router as lumos_router
 

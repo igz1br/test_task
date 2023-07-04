@@ -7,7 +7,8 @@ router = APIRouter()
 
 @router.post("/update/")
 async def update(*, data: ServerRequest):
-    commands[data.command](data.metadata)
+    if data.command in commands:
+        commands[data.command](data.metadata)
 
 @router.get("/status/")
 async def status():

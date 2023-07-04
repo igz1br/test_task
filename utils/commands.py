@@ -1,8 +1,9 @@
-from lantern import Lantern
+from utils.lantern import Lantern
 
 commands = {
-    "ON": Lantern.on,
-    "OFF": Lantern.off,
-    "COLOR": Lantern.change_color
+    "ON": lambda x: Lantern.on(),
+    "OFF": lambda x: Lantern.off(),
+    "COLOR": lambda x: Lantern.change_color(x)
 }
+
 
