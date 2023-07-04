@@ -9,6 +9,7 @@ packages = [{include = "_lumos"}]
 [tool.poetry.dependencies]
 python = "^3.9"
 fastapi = "^0.99.1"
+websockets = "^11.0.3"
 
 
 [build-system]
